@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, san-serif;
+    font-size: 12pt; /* maybe change font size and font idk */
+}
+ 
+#logo img {
+  float: left;
+  position: absolute;
+  margin-top: 12px;
+  margin-left: 10px;
+  width: 110px;
+}
+
+#search-nav {
+  position: fixed;
+  margin-top: 30px;
+  margin-left: 200px;
+  width: 110px;
+}
+
+#menu{
+    float:right;
+    width: 70%;
+    height: 100%;
+    margin: none;
+}
+
+#menu li{
+    display: inline-block;
+    padding: none;
+    margin: none;
+}
+  
+#menu li:hover a, #menu li span{
+    text-color:lime;
+    text-decoration: none;
+    opacity: 0.8;
+    transform: translateY(3px);
+    transition: 2s;    
+}
+
+#menu ul {
+    text-align: center;
+    float: right;
+    margin: none;
+}
+
+#menu li a, #menu li span {
+    display: inline-block;
+    padding: 0em 1.5em;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+
+#menu li a{    
+    color: #39FF14;
+}
+
+#menu li:hover a, #menu li span{
+    color: lime;
+    border-right: 0.001px solid lime;
+    border-left: 0.001px solid lime;
+    border-top: 0.001px solid lime;
+    border-bottom: 0.001px solid lime;
+    text-decoration: none;
+}
+
+body {
+  background-image: linear-gradient(to bottom
+ right, black, #282828);
+  margin: 0;
+  font-family: 
+}
+
+.search {
+  overflow: hidden;
+  background-color: #39FF14;
+  height: 50px;
+  width: 100%;
+  margin: 0px;
+  up: 1px;
+}
+.search input[type=text] {
+  float: left;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-left: 16px;
+  font-size: 17px;
+  width: 95%;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 24%;
+  max-width: 24%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 10px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Makes the 4 columns stack onto 2 */
+@media screen and (max-width: 823px) {
+  .column {
+    flex: 48%;
+    max-width: 48%;
+  }
+}
+
+/* Makes two columns above stack [change pixel size]*/
+@media screen and (max-width: 523px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
